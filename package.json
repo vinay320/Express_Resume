@@ -4,18 +4,20 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev":"nodemon app",
+    "dev": "nodemon app",
+    "deploy":"npm run build && gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type":"module",
+  "type": "module",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^5.0.0-alpha.8"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.20"
   }
 }
